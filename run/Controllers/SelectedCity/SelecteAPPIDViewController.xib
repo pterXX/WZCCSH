@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelecteAPPIDViewController">
+            <connections>
+                <outlet property="CityName" destination="EBu-W2-x1m" id="ug2-K2-Wlc"/>
+                <outlet property="subtitleLabel" destination="XIO-p5-kGX" id="rKq-Jd-4W1"/>
+                <outlet property="tableHeadView" destination="VaP-xl-0KJ" id="fgg-UA-pVF"/>
+                <outlet property="tableView" destination="TFT-VA-HOr" id="80P-0c-Yp6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TFT-VA-HOr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Igz-u9-VRH"/>
+                        <outlet property="delegate" destination="-1" id="V6j-7h-nrJ"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TFT-VA-HOr" secondAttribute="trailing" id="8Bv-J7-i8R"/>
+                <constraint firstAttribute="bottom" secondItem="TFT-VA-HOr" secondAttribute="bottom" id="L1P-x4-eAm"/>
+                <constraint firstItem="TFT-VA-HOr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Z0E-8g-U7F"/>
+                <constraint firstItem="TFT-VA-HOr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aKJ-26-yqb"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="VaP-xl-0KJ">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   定位城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFx-0r-dw3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="52.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="(如果定位不准确，请选择所在城市)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIO-p5-kGX">
+                    <rect key="frame" x="88" y="19" width="300" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Wh-Gf-vne">
+                    <rect key="frame" x="0.0" y="52.5" width="375" height="43.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectCIty_icon_localtion.png" translatesAutoresizingMaskIntoConstraints="NO" id="dn6-as-fcg">
+                            <rect key="frame" x="8" y="11" width="15" height="21.5"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <accessibilityTraits key="traits" none="YES"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="B4x-Rw-Clh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" preservesSuperviewLayoutMargins="YES" text="点击定位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBu-W2-x1m">
+                            <rect key="frame" x="34" y="13" width="120" height="20.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" priority="666" constant="120" id="fyl-jC-wOP"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.98965412379999995" green="0.92936849590000004" blue="0.92040210960000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="EBu-W2-x1m" firstAttribute="top" secondItem="5Wh-Gf-vne" secondAttribute="top" constant="13" id="7AD-ha-DOj"/>
+                        <constraint firstItem="dn6-as-fcg" firstAttribute="centerY" secondItem="5Wh-Gf-vne" secondAttribute="centerY" id="OZZ-yL-XZ0"/>
+                        <constraint firstItem="EBu-W2-x1m" firstAttribute="leading" secondItem="dn6-as-fcg" secondAttribute="trailing" constant="11" id="beM-TL-IwR"/>
+                        <constraint firstItem="dn6-as-fcg" firstAttribute="top" secondItem="5Wh-Gf-vne" secondAttribute="top" constant="11" id="iMT-2E-yKj"/>
+                        <constraint firstItem="dn6-as-fcg" firstAttribute="leading" secondItem="5Wh-Gf-vne" secondAttribute="leadingMargin" id="nyB-Cg-4wm"/>
+                        <constraint firstAttribute="bottom" secondItem="EBu-W2-x1m" secondAttribute="bottom" constant="10" id="r5W-F8-hhv"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="yhJ-bn-57P" appends="YES" id="Hyj-8C-bZ6"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRn-o0-UdG">
+                    <rect key="frame" x="0.0" y="96" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vRn-o0-UdG" secondAttribute="bottom" id="3Rb-e0-aTj"/>
+                <constraint firstItem="vRn-o0-UdG" firstAttribute="top" secondItem="5Wh-Gf-vne" secondAttribute="bottom" id="9ba-vx-pIR"/>
+                <constraint firstItem="bFx-0r-dw3" firstAttribute="leading" secondItem="VaP-xl-0KJ" secondAttribute="leading" id="Cqd-wC-Z0a"/>
+                <constraint firstItem="5Wh-Gf-vne" firstAttribute="top" secondItem="bFx-0r-dw3" secondAttribute="bottom" id="GPy-bq-ilO"/>
+                <constraint firstItem="XIO-p5-kGX" firstAttribute="centerX" secondItem="VaP-xl-0KJ" secondAttribute="centerX" constant="51.5" id="HIe-ZQ-Mx4"/>
+                <constraint firstItem="bFx-0r-dw3" firstAttribute="leading" secondItem="5Wh-Gf-vne" secondAttribute="leading" id="LIU-4O-69g"/>
+                <constraint firstItem="5Wh-Gf-vne" firstAttribute="trailing" secondItem="vRn-o0-UdG" secondAttribute="trailing" id="bg8-He-Qlx"/>
+                <constraint firstAttribute="trailing" secondItem="bFx-0r-dw3" secondAttribute="trailing" constant="-2" id="eic-5R-l7a"/>
+                <constraint firstItem="5Wh-Gf-vne" firstAttribute="bottom" secondItem="VaP-xl-0KJ" secondAttribute="bottomMargin" id="exF-kM-1dm"/>
+                <constraint firstItem="XIO-p5-kGX" firstAttribute="leading" secondItem="VaP-xl-0KJ" secondAttribute="leading" constant="88" id="l1G-R2-NvA"/>
+                <constraint firstItem="bFx-0r-dw3" firstAttribute="top" secondItem="VaP-xl-0KJ" secondAttribute="top" id="liZ-7J-bey"/>
+                <constraint firstItem="bFx-0r-dw3" firstAttribute="trailing" secondItem="5Wh-Gf-vne" secondAttribute="trailing" id="oaC-LK-yRG"/>
+                <constraint firstItem="XIO-p5-kGX" firstAttribute="centerY" secondItem="bFx-0r-dw3" secondAttribute="centerY" id="pN9-Jf-OVp"/>
+                <constraint firstItem="5Wh-Gf-vne" firstAttribute="leading" secondItem="vRn-o0-UdG" secondAttribute="leading" id="wr0-Gu-pER"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="433.5" y="-233"/>
+        </view>
+        <tapGestureRecognizer id="yhJ-bn-57P">
+            <connections>
+                <action selector="localtionViewTapGesture:" destination="-1" id="HNs-tv-zPK"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="selectCIty_icon_localtion.png" width="15" height="19"/>
+    </resources>
+</document>

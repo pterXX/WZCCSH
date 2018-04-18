@@ -1,0 +1,85 @@
+//
+//  PrefixHeader.pch
+//  proj
+//
+//  Created by asdasd on 2017/9/25.
+//  Copyright © 2017年 asdasd. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+
+
+#endif
+
+#import <ReactiveObjC/ReactiveObjC.h>
+#import <MJRefresh/MJRefresh.h>
+#import <RESideMenu/RESideMenu.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <Masonry.h>
+#import <AFNetworking.h>
+#import "SDAutoLayout.h"
+#import "MBProgressHUD.h"
+
+#import "Configs/SJApi.h"
+#import "Configs/SJColor.h"
+#import "Configs/SJOtherUtil.h"
+#import "Configs/SJNotificationKeys.h"
+#import "Configs/SJShortcutItemKeys.h"
+
+#import "VoicePrompt/VoiceManager.h"
+
+#import "Util/Share/ShareUtil.h"
+#import "Util/TextField/XQTextField.h"
+#import "Util/UIFont+Category/UIFont+runtime.h"
+#import "Util/UIView+Category/UIView+Category.h"
+#import "Util/MessageToast/MessageToast.h"
+#import "Util/UIColor+Category/UIColorUtil.h"
+#import "Util/NSArray+Category/NSArray+zh_SafeAccess.h"
+#import "Util/NSString+Category/NSStringUtil.h"
+#import "Util/NSObject+Category/NSObject+AssociatedObject.h"
+#import "Util/NSObject+Category/NSObject+Property.h"
+#import "Util/UIImage+Category/UIImage+Tint.h"
+#import "Util/UIImage+Category/UIImage+Category.h"
+#import "Util/UIImageView+Category/UIImageView+Category.h"
+#import "Util/UIViewController+Public/UIViewController+storyboard.h"
+#import "Util/UIDevice+Category/UIDevice+Category.h"
+#import "Util/UIViewController+Public/UIViewController+Public.h"
+#import "Util/NSDate+Category/NSDate+Extend.h"
+
+
+
+
+#import "Libs/IQKeyboardManager/IQKeyboardManager.h"
+#import "Libs/TGWebController/TGWebViewController.h"
+//#import "Libs/WRNavigationBar/WRNavigationBar.h"
+
+#import "ToolModel.h"
+#import "xq_TableView.h"
+#import "XQButton.h"
+#import "UIButton+MHExtra.h"
+#import "UIAlertController+Extend.h"
+#import "UIView+EqualMargin.h"
+#import "UITableViewCell+indexPath.h"
+#import "MLNetWorkHelper/MLNetWorkHelper.h"
+#import "RVHeadPortrait.h"
+
+#import "Views/BassClass/XQViewPtotocol.h"
+#import "ViewModels/BassClass/XQViewModelProtocol.h"
+#import "ViewModels/RootViewController/RootViewControllerUtil.h"
+
+#import "Controllers/BassClass/XQBassViewController.h"
+#import "Controllers/BassClass/XQBassViewControllerProtocol.h"
+
+
+#define DEFAULT_HEAD_ICON Img(@"home_icon_head")
+
+
+#endif /* PrefixHeader_pch */

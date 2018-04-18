@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessgaeDetailViewController">
+            <connections>
+                <outlet property="timeLabel" destination="uK8-95-VsB" id="8Uj-Px-CZM"/>
+                <outlet property="titleLabel" destination="WM7-cU-ncr" id="2pD-1y-YvG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Rxr-UN-hhE" id="8c5-YW-mWh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SPK-ux-zpP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018-10-23 22:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uK8-95-VsB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="uK8-95-VsB" secondAttribute="height" multiplier="375:40" id="Vn5-4g-31m"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iti-OG-NtO">
+                            <rect key="frame" x="0.0" y="40" width="375" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你抢到一个新的订单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WM7-cU-ncr">
+                                    <rect key="frame" x="10" y="0.0" width="355" height="45"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42.5" id="6Lt-R7-rby"/>
+                                <constraint firstItem="WM7-cU-ncr" firstAttribute="top" secondItem="Iti-OG-NtO" secondAttribute="top" id="7lD-V9-5Pr"/>
+                                <constraint firstAttribute="height" priority="250" constant="42.5" id="QJ3-V4-SC2"/>
+                                <constraint firstItem="WM7-cU-ncr" firstAttribute="centerX" secondItem="Iti-OG-NtO" secondAttribute="centerX" id="UW8-cp-s4G"/>
+                                <constraint firstAttribute="bottom" secondItem="WM7-cU-ncr" secondAttribute="bottom" id="ch4-uz-QkD"/>
+                                <constraint firstItem="WM7-cU-ncr" firstAttribute="width" secondItem="Iti-OG-NtO" secondAttribute="width" multiplier="355:375" id="lR0-gO-AZm"/>
+                            </constraints>
+                        </view>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-UN-hhE">
+                            <rect key="frame" x="0.0" y="85" width="375" height="582"/>
+                            <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </webView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Iti-OG-NtO" firstAttribute="width" secondItem="SPK-ux-zpP" secondAttribute="width" id="izU-nr-8dY"/>
+                        <constraint firstItem="uK8-95-VsB" firstAttribute="width" secondItem="SPK-ux-zpP" secondAttribute="width" id="m8X-0l-umX"/>
+                        <constraint firstItem="Rxr-UN-hhE" firstAttribute="width" secondItem="SPK-ux-zpP" secondAttribute="width" id="qsk-MN-Lpg"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="SPK-ux-zpP" secondAttribute="bottom" id="44U-eC-uTh"/>
+                <constraint firstItem="SPK-ux-zpP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8e9-QL-hmH"/>
+                <constraint firstItem="SPK-ux-zpP" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="a1Y-gc-y0w"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="SPK-ux-zpP" secondAttribute="trailing" id="y2l-jy-Vio"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
