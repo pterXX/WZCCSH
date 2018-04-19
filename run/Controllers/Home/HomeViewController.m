@@ -98,10 +98,12 @@
         @strongify(self);
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         [self displayView];
+        [self.applyViewController.scrollView setIsShowDataEmpty:YES emptyViewType:DataEmptyViewTypeApply];
     } failure:^(NSError *error) {
         @strongify(self);
         [MBProgressHUD hideAllHUDsForView:self.view animated:YES];
         [self displayView];
+        [self.applyViewController.scrollView setIsShowDataEmpty:YES emptyViewType:DataEmptyViewTypeNoNetwork];
     }];
 }
 

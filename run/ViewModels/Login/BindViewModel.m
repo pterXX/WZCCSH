@@ -21,11 +21,7 @@
             ML_MESSAGE_NETWORKING;
         }else{
             if (x.errcode == 0) {
-                if (self.type == 0) {
-                    [self.tripartiteViewModel.wechatClickCommand execute:nil];
-                }else{
-                     [self.tripartiteViewModel.qqClickCommand execute:nil];
-                }
+                [XQLoginExample pushMainController];
             }else{
                 ML_SHOW_MESSAGE(x.errmsg);
             }

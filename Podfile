@@ -51,6 +51,8 @@ pod 'BaiduMapKit'
     pod ‘YYText’
 #    pod 'FLEX', '~> 2.0', :configurations => [‘Debug']
     pod 'MSWeakTimer', '~> 1.1.0'
+    pod 'EAIntroView'
+    pod 'SMPageControl'
 #    pod 'DZNEmptyDataSet'
 
 end

@@ -498,6 +498,11 @@ static NSString *const CustomErrorDomain = @"cn.cssh.www.runing_man";
         [dc setObject:bind_id?:@"" forKey:@"bind_id"];
         [MLHTTPRequest GETWithURL:CSSH_OTHER_LOGIN_BIND_MOBILE parameters:dc success:^(MLHTTPRequestResult *result) {
             if (result) {
+                if (result.errcode == 0) {
+                    [XQLoginExample setlastPhone:phone];
+                    [XQLoginExample setLastUserInfo:result.data];
+                }
+
                 [subscriber sendNext:result];
                 [subscriber sendCompleted];
             }else{
@@ -521,7 +526,7 @@ static NSString *const CustomErrorDomain = @"cn.cssh.www.runing_man";
             [subscriber sendCompleted];
             return nil;
         }
-        [self trySmsSendServerWithMobile:mobile from:@"1" success:^(MLHTTPRequestResult *result) {
+        [self trySmsSendServerWithMobile:mobile from:@"14" success:^(MLHTTPRequestResult *result) {
             CodeModel *code = [[CodeModel alloc] init];
             code.msg = result.errmsg;
             code.code_name = result.data[@"code_name"];
@@ -553,8 +558,8 @@ static NSString *const CustomErrorDomain = @"cn.cssh.www.runing_man";
             return nil;
         }
 
-        //  form 4  为绑定手机号
-        [self trySmsSendServerWithMobile:mobile from:@"4" success:^(MLHTTPRequestResult *result) {
+        //  form 17  为绑定手机号
+        [self trySmsSendServerWithMobile:mobile from:@"17" success:^(MLHTTPRequestResult *result) {
             CodeModel *code = [[CodeModel alloc] init];
             code.msg = result.errmsg;
             code.code_name = result.data[@"code_name"];
@@ -585,7 +590,7 @@ static NSString *const CustomErrorDomain = @"cn.cssh.www.runing_man";
         }
 
         //  form 3  忘记密码
-        [self trySmsSendServerWithMobile:mobile from:@"3" success:^(MLHTTPRequestResult *result) {
+        [self trySmsSendServerWithMobile:mobile from:@"16" success:^(MLHTTPRequestResult *result) {
             CodeModel *code = [[CodeModel alloc] init];
             code.msg = result.errmsg;
             code.code_name = result.data[@"code_name"];
@@ -617,7 +622,7 @@ static NSString *const CustomErrorDomain = @"cn.cssh.www.runing_man";
                               fail:(void(^)(NSError *))fail
 {
     mobile = [mobile stringByReplacingOccurrencesOfString:@" " withString:@""];
-    NSDictionary *dic = @{@"mobile":mobile?:@"",@"type":from?:@"1"};
+    NSDictionary *dic = @{@"mobile":mobile?:@"",@"type":from?:@"14"};
     [MLHTTPRequest GETWithURL:CSSH_USER_SENDE_CODE parameters:dic success:success failure:fail];
 }
 

@@ -19,6 +19,8 @@
 #import "ForgotPasswordViewController.h"
 #import "BaiduLocationService.h"
 
+
+
 @interface LoginViewController ()
 @property (nonatomic, strong) LoginView *loginView;
 @property (nonatomic, strong) LoginViewModel *viewModel;
@@ -140,6 +142,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
 
 /*
 #pragma mark - Navigation

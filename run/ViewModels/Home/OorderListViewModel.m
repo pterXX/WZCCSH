@@ -132,7 +132,10 @@
 }
 
 - (void)ls_setFooterRefreshWithArray:(NSArray *)array {
-
+    
+    if (array == nil) {
+        return;
+    }
     if (array.count == 0) {
 
         [self.refreshEndSubject sendNext:@(XQFooterRefresh_HasNoMoreData)];
@@ -143,6 +146,9 @@
 }
 
 - (void)ls_setHeaderRefreshWithArray:(NSArray *)array {
+    if (array == nil) {
+        return;
+    }
     if (array.count == 0) {
 
         [self.refreshEndSubject sendNext:@(XQHeaderRefresh_HasNoMoreData)];

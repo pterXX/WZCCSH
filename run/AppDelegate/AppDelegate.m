@@ -11,6 +11,8 @@
 #import "AppDelegate+RootViewController.h"
 #import "RumtimeLog.h"
 
+#import "LaunchView.h"
+
 @interface AppDelegate ()
 
 @end
@@ -52,6 +54,9 @@
 
     //  跳转到主页,自动判断是否登录
     [self configWindowRootController];
+
+    
+
     
     return YES;
 }

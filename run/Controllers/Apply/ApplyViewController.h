@@ -7,8 +7,9 @@
 //
 
 #import "XQBassViewController.h"
-
+#import "UIScrollView+DataEmptyView.h"
 #define kApplyViewNoNetworingRefresNoteKey @"kApplyViewNoNetworingRefresNoteKey"
 @interface ApplyViewController : XQBassViewController
 
+@property (nonatomic ,strong) UIScrollView *scrollView;
 @end

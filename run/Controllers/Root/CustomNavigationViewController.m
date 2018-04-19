@@ -10,6 +10,9 @@
 #import <objc/runtime.h>
 #import "xq_BarButtonItem.h"
 #import "RVHeadPortrait.h"
+
+
+
 @interface CustomNavigationViewController ()
 
 @end
@@ -41,22 +44,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-//    //    //  设置透明的导航栏
-//    [CustomNavigationViewController setTransparentVisibleVc:[[CustomNavigationViewController getCurrentVc] class]];
-//    //    //  设置标题颜色
-//    [CustomNavigationViewController setTitleColorVisibleVc:[[CustomNavigationViewController getCurrentVc] class]];
 
-    //
     if (self.sideMenuViewController && self.viewControllers[0] == self.topViewController) {
         __weak typeof(self) weakSelf = self;
         RVHeadPortrait *rv = [RVHeadPortrait defaultHeadPortraitForBlock:^{
             //  打开菜单栏
             [weakSelf.sideMenuViewController presentLeftMenuViewController];
+
+           
         }];
         self.topViewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rv];
         ///NOTE:RAC 通知

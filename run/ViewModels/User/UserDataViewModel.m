@@ -85,7 +85,7 @@
     _toolModels[0][0].iconImage = self.model.tx_pic?self.model.tx_pic:([self.model.sex intValue] == 1?@"user_icon_head1":@"user_icon_head2");
     _toolModels[1][0].detialTitle = toolDetailAttr([XQLoginExample lastCity]);
     _toolModels[1][1].detialTitle = toolDetailAttr(self.model.area);
-    _toolModels[1][2].detialTitle = toolDetailAttr([self.model.mobile replaceStringWithAsteriskStartLocation:3 lenght:6]);
+    _toolModels[1][2].detialTitle = toolDetailAttr(self.model.mobile.length == 11? [self.model.mobile replaceStringWithAsteriskStartLocation:3 lenght:6]:self.model.mobile);
 
     NSDictionary *dict = @{
                            NSFontAttributeName:[UIFont adjustFont:15],

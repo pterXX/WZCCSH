@@ -16,10 +16,9 @@
 #import "SelecteAPPIDViewController.h"
 #import "XQLoginExample.h"
 
+
 @interface BindViewController ()
 @property (nonatomic, strong) BindView *bindView;
-
-
 @end
 
 @implementation BindViewController
@@ -28,10 +27,12 @@
     [super viewDidLoad];
     self.isExtendLayout = YES;
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+
 }
 
 #pragma mark - private
@@ -87,6 +88,8 @@
     }
     return _viewModel;
 }
+
+
 
 
 /*

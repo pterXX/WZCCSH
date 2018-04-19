@@ -87,8 +87,9 @@
         @weakify(self);
         _sendCodeCommand = [[RACCommand alloc] initWithSignalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
             @strongify(self);
+
            return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-               [XQLoginExample trySmsSendServerWithMobile:self.phone from:@"4" success:^(MLHTTPRequestResult *result) {
+               [XQLoginExample trySmsSendServerWithMobile:self.phone from:@"15" /* 15  支付宝绑定 */ success:^(MLHTTPRequestResult *result) {
                    [subscriber sendNext:result];
                    [subscriber sendCompleted];
                } fail:^(NSError *err) {

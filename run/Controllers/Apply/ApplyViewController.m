@@ -7,10 +7,10 @@
 //
 
 #import "ApplyViewController.h"
-#import "UIScrollView+DataEmptyView.h"
+
 #import "RunApplyViewController.h"
 @interface ApplyViewController ()
-@property (nonatomic ,strong) UIScrollView *scrollView;
+
 @end
 
 @implementation ApplyViewController

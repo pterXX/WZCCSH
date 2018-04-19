@@ -15,6 +15,9 @@ PODS:
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
   - BaiduMapKit (3.4.0)
+  - EAIntroView (2.10.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
   - JCore (1.1.5)
   - JPush (3.0.6):
     - JCore (~> 1.1.1)
@@ -44,6 +47,7 @@ PODS:
     - MOBFoundation
   - ShareSDK3/ShareSDKUI (4.0.1):
     - MOBFoundation
+  - SMPageControl (1.2)
   - TZImagePickerController (1.9.3)
   - UMengAnalytics (4.2.4)
   - VTMagic (1.2.4):
@@ -57,6 +61,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking
   - BaiduMapKit
+  - EAIntroView
   - JPush
   - JWLaunchAd
   - Masonry
@@ -74,6 +79,7 @@ DEPENDENCIES:
   - ShareSDK3/ShareSDKPlatforms/SinaWeibo
   - ShareSDK3/ShareSDKPlatforms/WeChat
   - ShareSDK3/ShareSDKUI
+  - SMPageControl
   - TZImagePickerController
   - UMengAnalytics
   - VTMagic
@@ -85,6 +91,8 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BaiduMapKit: 0a5e5e0b1e3fd8dc5aceb40ab9b89e52e1d13df9
+  EAIntroView: 3494b7bbd1212e3a4f7e8d16194a1b00e7b9abb2
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   JCore: 9bd9c770c877c583d98b90a68792b8361974c231
   JPush: c41be50eb1a574a66aeb68d237f00a4ec6ec3a82
   JWLaunchAd: b7898e445362a32713049cf1eba3212c3bd6f258
@@ -99,6 +107,7 @@ SPEC CHECKSUMS:
   SDAutoLayout: c5509e77ae75735d9a39f7bc83dba6d3f75d49d8
   SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   ShareSDK3: 6983a9b5209b63f2f4297fb0328d9a8dd6abd5f1
+  SMPageControl: 922892813001cfaf059e86e6801f46a967e9ee29
   TZImagePickerController: 079ab986018c22793462e531045a75e366b18252
   UMengAnalytics: ef8d45f94c0e5771dc364cf6a5731d9d3b101da2
   VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
@@ -107,6 +116,6 @@ SPEC CHECKSUMS:
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
   zhPopupController: be6624f18dc16d6f0ccc02199067406ca17bce91
 
-PODFILE CHECKSUM: 38872e4a496561c722fca00a3d339535d47cae9b
+PODFILE CHECKSUM: 1c227699afe849d84c090fe453b7835a36b118c3
 
 COCOAPODS: 1.2.0

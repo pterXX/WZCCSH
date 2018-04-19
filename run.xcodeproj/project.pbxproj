@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2787580B3886A6D189F784B3 /* libPods-runUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BAA0C09FA4E0610E231ECF /* libPods-runUITests.a */; };
 		3C98BB566265F249B2784DCA /* libPods-runTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15CC2C7CFFD99AC88B0BF0B3 /* libPods-runTests.a */; };
+		691D5F63208774C800D3035E /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 691D5F62208774C800D3035E /* LaunchView.m */; };
 		692F2871207E484B008F14F3 /* RouteAnnotation.mm in Sources */ = {isa = PBXBuildFile; fileRef = 692F2870207E484A008F14F3 /* RouteAnnotation.mm */; };
 		692F2874207E49ED008F14F3 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692F2872207E49EC008F14F3 /* UIImage+Rotate.m */; };
 		692F287B207EE77B008F14F3 /* BMKPolyline+type.m in Sources */ = {isa = PBXBuildFile; fileRef = 692F287A207EE77B008F14F3 /* BMKPolyline+type.m */; };
@@ -233,7 +234,6 @@
 		69D16E73207E156A004C2323 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D16E72207E156A004C2323 /* libsqlite3.0.tbd */; };
 		69D16E75207E1576004C2323 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D16E74207E1576004C2323 /* CoreTelephony.framework */; };
 		69D16E77207E1583004C2323 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D16E76207E1583004C2323 /* libstdc++.6.0.9.tbd */; };
-		69D97541207F6D2200D947BE /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D97540207F6D2200D947BE /* Launch Screen.storyboard */; };
 		69D97544207F95A900D947BE /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D97543207F95A900D947BE /* FindPasswordView.m */; };
 		69D97547207F95CB00D947BE /* FindPasswordViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D97546207F95CB00D947BE /* FindPasswordViewModel.m */; };
 		69D9755520808DA000D947BE /* AliPayTiXianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D9755320808DA000D947BE /* AliPayTiXianViewController.m */; };
@@ -292,6 +292,8 @@
 		25BD9C55BF38983FC5214F22 /* Pods-runUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-runUITests/Pods-runUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3DD929712F6D88309B8F567F /* Pods-runTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-runTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-runTests/Pods-runTests.release.xcconfig"; sourceTree = "<group>"; };
 		55DDD6D480852BAAB9FAD1EC /* libPods-run.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-run.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		691D5F61208774C800D3035E /* LaunchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchView.h; sourceTree = "<group>"; };
+		691D5F62208774C800D3035E /* LaunchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchView.m; sourceTree = "<group>"; };
 		692F286F207E484A008F14F3 /* RouteAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAnnotation.h; sourceTree = "<group>"; };
 		692F2870207E484A008F14F3 /* RouteAnnotation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RouteAnnotation.mm; sourceTree = "<group>"; };
 		692F2872207E49EC008F14F3 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Rotate.m"; sourceTree = "<group>"; };
@@ -729,7 +731,6 @@
 		69D16E72207E156A004C2323 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		69D16E74207E1576004C2323 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		69D16E76207E1583004C2323 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
-		69D97540207F6D2200D947BE /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		69D97542207F95A900D947BE /* FindPasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPasswordView.h; sourceTree = "<group>"; };
 		69D97543207F95A900D947BE /* FindPasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindPasswordView.m; sourceTree = "<group>"; };
 		69D97545207F95CB00D947BE /* FindPasswordViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewModel.h; sourceTree = "<group>"; };
@@ -795,6 +796,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691D5F602087748900D3035E /* LaunchView */ = {
+			isa = PBXGroup;
+			children = (
+				691D5F61208774C800D3035E /* LaunchView.h */,
+				691D5F62208774C800D3035E /* LaunchView.m */,
+			);
+			path = LaunchView;
+			sourceTree = "<group>";
+		};
 		692F2875207EE310008F14F3 /* Order */ = {
 			isa = PBXGroup;
 			children = (
@@ -868,7 +878,6 @@
 				69D16B6D207C74BF004C2323 /* ViewController.m */,
 				69D16C1D207C7602004C2323 /* PrefixHeader.pch */,
 				69D16B77207C74BF004C2323 /* Info.plist */,
-				69D97540207F6D2200D947BE /* Launch Screen.storyboard */,
 				69D16B72207C74BF004C2323 /* Assets.xcassets */,
 				69D16D74207C7604004C2323 /* AppDelegate */,
 				69D16D59207C7603004C2323 /* Base.lproj */,
@@ -1265,6 +1274,7 @@
 		69D16C1E207C7603004C2323 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				691D5F602087748900D3035E /* LaunchView */,
 				692F2875207EE310008F14F3 /* Order */,
 				69D16E4D207CDAC0004C2323 /* Wallet */,
 				69D16C1F207C7603004C2323 /* Apply */,
@@ -2411,7 +2421,6 @@
 				69D16DEB207C7604004C2323 /* MessgaeDetailViewController.xib in Resources */,
 				69D16DED207C7604004C2323 /* RunOrderViewController.xib in Resources */,
 				69D16DD5207C7604004C2323 /* upgrade_bg@3x.png in Resources */,
-				69D97541207F6D2200D947BE /* Launch Screen.storyboard in Resources */,
 				69D16DF9207C7604004C2323 /* UserViewController.xib in Resources */,
 				69D16B73207C74BF004C2323 /* Assets.xcassets in Resources */,
 				69D9755620808DA000D947BE /* AliPayTiXianViewController.xib in Resources */,
@@ -2616,6 +2625,7 @@
 				69D16DFC207C7604004C2323 /* WalletViewController.m in Sources */,
 				69D16E15207C7604004C2323 /* SDBrowserImageView.m in Sources */,
 				692F287B207EE77B008F14F3 /* BMKPolyline+type.m in Sources */,
+				691D5F63208774C800D3035E /* LaunchView.m in Sources */,
 				69D16D86207C7604004C2323 /* NSObject+Property.m in Sources */,
 				69D16E3A207C9539004C2323 /* ChangePhoneView2.m in Sources */,
 				69D16D97207C7604004C2323 /* UIColor+hex.m in Sources */,

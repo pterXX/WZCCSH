@@ -11,6 +11,7 @@
 #import "HomeViewController.h"
 #import "RootViewControllerUtil.h"
 #import "XQLoginExample.h"
+#import "LaunchView.h"
 
 @implementation AppDelegate (RootViewController)
 
@@ -20,14 +21,19 @@
  */
 - (void)configWindowRootController {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    //   有菜单栏的控制器
-//    self.window.rootViewController = [RootViewControllerUtil notTabbarMenuViewController];
-    //  只有导航栏的控制器
-//    self.window.rootViewController = [RootViewControllerUtil navigationController];
     self.window.rootViewController = [RootViewControllerUtil pushPermissionsViewController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+
+
+    //  引导页
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"LaunchView2"] == nil) {
+        LaunchView *lv = [[LaunchView alloc] initWithFrame:self.window.bounds];
+        [lv setViewWillHide:^{
+            [[NSUserDefaults standardUserDefaults] setObject:@"1" forKey:@"LaunchView2"];
+        }];
+        [self.window addSubview:lv];
+    }
 }
 
 /**
